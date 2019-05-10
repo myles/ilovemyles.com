@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>I Love Myles</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<style>
+			:root {
+				--colour-mirage: #1c282e;
+				--colour-chathams-blue: #136483;
+				--colour-bondi-blue: #008fbb;
+				--colour-pelorous: #46b2c3;
+				--colour-aqua-haze: #f7fafa;
+			}
+			
+			html {
+				background-image: linear-gradient(
+					var(--colour-bondi-blue) 25%,
+					var(--colour-pelorous)
+				);
+				color: var(--colour-aqua-haze);
+				font-family: "Raleway", sans-serif;
+				min-height: 100vh;
+				margin: 0;
+			}
+			
+			body {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				padding-top: 2rem;
+			}
+			
+			h1 {
+				font-weight: normal;
+				font-size: 11.391em;
+				margin: 4rem 0;
+			}
+			
+			h1 a {
+				color: var(--colour-aqua-haze);
+				font-weight: normal;
+				text-decoration: underline;
+			}
+			
+			h1 a:hover {
+				color: var(--colour-chathams-blue);
+			}
+			
+			.btn {
+				background-color: var(--colour-chathams-blue);
+				color: var(--colour-aqua-haze);
+				font-size: 5.062em;
+				padding: 20px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+			
+			.btn:hover {
+				filter: brightness(80%);
+			}
+			
+			.js-headline,
+			.js-btn {
+				display: block;
+				width: 85%;
+			}
+		</style>
+	</head>
+	<body class="h-card">
+		<h1 class="js-headline">
+			I&nbsp;Love
+			<a href="https://mylesb.ca/" class="p-name u-url">Myles</a>
+		</h1>
+		
+		<a href="mailto:myles@ilovemyles.com" class="btn u-email">
+			<span class="js-btn">myles@ilovemyles.com</span>
+		</a>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+		<script>
+			jQuery(".js-headline").fitText(0.6);
+			jQuery(".js-btn").fitText(1.4);
+		</script>
+	</body>
+</html>
